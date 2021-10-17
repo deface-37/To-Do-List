@@ -1,0 +1,88 @@
+.title {
+    text-align: center;
+}
+
+.main {
+    margin: auto;
+    width: 60%;
+    font-family: 'Titillium Web', sans-serif;
+}
+
+form.new-task {
+    display: flex;
+    gap: 10px;
+}
+
+#input-task {
+    flex-grow: 10;
+    border: none;
+    border-bottom: darkslateblue solid 2px;
+    border-radius: 4px;
+    padding: 0.5em;
+}
+
+#input-task:focus {
+    outline: none;
+    box-shadow: -6px 6px 15px -5px darkslateblue;
+}
+
+#input-task.tried:invalid {
+    background-color: #dc143c66;
+    box-shadow: none;
+}
+
+
+#add-task-button {
+    flex-grow: 0.5;
+    background: darkslateblue;
+    border-radius: 2px;
+    color: white;
+    font-weight: 600;
+    border: none;
+}
+
+#add-task-button:active {
+    transform: translateY(2px);
+}
+#add-task-button:hover {
+    opacity: 0.8;
+}
+
+#task-list {
+    padding-left: 0;
+}
+
+.task-element {
+    display: flex;
+    height: 30px;
+    padding-bottom: 10px;
+    align-items: center;
+}
+
+.task-element input {
+    margin-right: 20px;
+}
+
+.task {
+    flex-grow: 1;
+}
+
+.task.done {
+    text-decoration: line-through;
+}
+
+.delete-btn {
+    border: none;
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    background: url("assets/red-button.svg");
+    padding: 0;
+}
+
+.delete-btn:hover {
+    opacity: 0.7;
+}
+.delete-btn:active {
+    transform: translateY(3%);
+}
